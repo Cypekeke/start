@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Start {
     public static void Age(String[] args) {
+        System.out.println("Podaj wiek Piotrka ");
         Scanner podajAge = new Scanner(System.in);//tworze obiekt podaj age
 
         int age = podajAge.nextInt();                   //nextInt odczytuje age
