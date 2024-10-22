@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Start {
-    public static void Age(String[] args) {
+    public static void main(String[] args) {
         System.out.println("Podaj wiek Piotrka ");
         Scanner podajAge = new Scanner(System.in);//tworze obiekt podaj age
 
@@ -11,7 +11,7 @@ public class Start {
         if (IsAgeRight(age)) {    //sprawdza czy wiek czy age jest zgodny z zalozeniami z boolean
             System.out.println("Tak");
         } else {
-            System.out.println("Nie, mam 30 i ucze się programowania.");
+            System.out.println("Nie, mam 30 lat i ucze się programowania.");
         }
         Initials(args); //wywolanie metody Initials do pytania o inicjaly
 
@@ -24,9 +24,10 @@ public class Start {
     }
 
     public static void Initials(String[] args) {
-        System.out.println("Podaj inicjały: ");
+        System.out.println("Podaj inicjały ");
         Scanner podajInitial = new Scanner(System.in);   //tworze obiekt podaj inicjalow (z racji ze z char mialbym wiecej pisania uzyje string)
         String initial = podajInitial.next();   //odczytuje inicjaly
+        System.out.println("Czy Twoje inicjały to " + initial + "?");
 
         // sprawdza czy inicjaly to "PS"
         if (initial.equals("PS")) {
